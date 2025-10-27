@@ -1,0 +1,39 @@
+{
+  "name": "token-vesting-contract",
+  "version": "1.0.0",
+  "description": "A comprehensive token vesting contract for Flare network",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network flare-testnet",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "verify": "hardhat verify --network flare-testnet",
+    "coverage": "hardhat coverage"
+  },
+  "keywords": [
+    "solidity",
+    "vesting",
+    "flare",
+    "blockchain",
+    "defi"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.8",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.9.0",
+    "chai": "^4.3.7",
+    "ethers": "^6.8.1",
+    "hardhat": "^2.19.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.5"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^17.2.3"
+  }
+}
